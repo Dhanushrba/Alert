@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Driver Assistance System</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Maps API -->
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA195SVJCWRu0d9Fpe-E6wOuGVARDX39OU&libraries=geometry"></script>
+</head>
+<body>
+  <!-- Background animation -->
+  <div class="background-overlay"></div>
+
+  <!-- UI Content -->
+  <div class="content-container">
+    <h1 class="title">Driver Assistance System</h1>
+    <p class="description">Stay informed and safe with real-time curve alerts and navigation assistance.</p>
+    
+    <!-- Information Panel -->
+    <div id="info-panel">
+      <div id="current-speed">Speed: <span id="speed">60</span> km/h</div>
+      <div id="curve-alert" class="hidden">Sharp curve ahead! Slow down!</div>
+    </div>
+    
+    <!-- Map and Toggle Button -->
+    <div id="map"></div>
+    <button id="toggle-view">Toggle Street View</button>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
